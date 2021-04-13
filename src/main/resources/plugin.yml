@@ -1,0 +1,8 @@
+name: ThirdPersonSpectator
+version: '1.0'
+main: net.seliba.thirdpersonspectator.ThirdPersonSpectator
+api-version: '1.13'
+
+commands:
+  spectate:
+    description: Beobachte einen Spieler aus der Third-Person-Sicht
