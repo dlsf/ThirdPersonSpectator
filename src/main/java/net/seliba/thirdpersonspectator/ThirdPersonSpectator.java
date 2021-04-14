@@ -1,5 +1,6 @@
 package net.seliba.thirdpersonspectator;
 
+import com.github.johnnyjayjay.compatre.NmsClassLoader;
 import net.seliba.thirdpersonspectator.commands.SpectateCommand;
 import net.seliba.thirdpersonspectator.configuration.ConfigFile;
 import net.seliba.thirdpersonspectator.configuration.ConfigurationProvider;
@@ -17,6 +18,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class ThirdPersonSpectator extends JavaPlugin {
 
     private ConfigurationProvider configurationProvider;
+
+    static {
+        NmsClassLoader.loadNmsDependents(ThirdPersonSpectator.class);
+    }
 
     /**
      * The startup logic.

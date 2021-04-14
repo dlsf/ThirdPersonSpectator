@@ -1,5 +1,6 @@
 package net.seliba.thirdpersonspectator.utils;
 
+import com.github.johnnyjayjay.compatre.NmsDependent;
 import net.minecraft.server.v1_13_R2.*;
 import org.bukkit.Location;
 import org.bukkit.craftbukkit.v1_13_R2.CraftWorld;
@@ -11,6 +12,7 @@ import java.util.Set;
 /**
  * Class which contains various utils for working with NMS (the net.minecraft.server package).
  */
+@NmsDependent
 public class NMSUtils {
 
     /**
