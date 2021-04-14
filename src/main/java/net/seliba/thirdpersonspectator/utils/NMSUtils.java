@@ -23,7 +23,7 @@ public class NMSUtils {
      */
     public static EntityArmorStand spawnArmorStand(Location location) {
         WorldServer world = ((CraftWorld) location.getWorld()).getHandle();
-        EntityArmorStand armorStand = new EntityArmorStand(world);
+        EntityArmorStand armorStand = new EntityArmorStand(world, location.getX(), location.getY(), location.getZ());
 
         armorStand.setLocation(location.getX(), location.getY(), location.getZ(), location.getYaw(), location.getPitch());
 

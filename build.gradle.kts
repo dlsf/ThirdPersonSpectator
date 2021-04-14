@@ -43,5 +43,9 @@ tasks {
     shadowJar {
         archiveClassifier.set("")
         relocate("io.papermc.lib", "net.seliba.thirdpersonspectator.paperlib")
+        relocate("com.github.johnnyjayjay.compatre", "net.seliba.thirdpersonspectator.compatre")
+
+        // Fix for the ASM for some Spigot versions (for instance 1.13.2)
+        relocate("org.objectweb.asm", "net.seliba.thirdpersonspectator.asm")
     }
 }

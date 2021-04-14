@@ -19,6 +19,9 @@ public final class ThirdPersonSpectator extends JavaPlugin {
 
     private ConfigurationProvider configurationProvider;
 
+    /*
+     * Enables multi-version support with the help of compatre (https://github.com/JohnnyJayJay/compatre).
+     */
     static {
         NmsClassLoader.loadNmsDependents(ThirdPersonSpectator.class);
     }
