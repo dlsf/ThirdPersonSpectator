@@ -171,6 +171,16 @@ public final class SpectatablePlayer {
         }
     }
 
+    /**
+     * Calculates the next position of the camera ArmorStand.
+     * <p>
+     * This will either be normal third-person, a birds-eye view or optionally
+     * the Player's first-person view based on the environment.
+     * As this method will be called very often when there are many spectators,
+     * it should be reasonably fast.
+     *
+     * @return The next Location of the ArmorStand.
+     */
     private Location calculateArmorStandLocation() {
         Location location = bukkitPlayer.getEyeLocation();
         Vector origin = location.toVector();
