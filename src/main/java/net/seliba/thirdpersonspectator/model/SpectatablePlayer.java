@@ -1,5 +1,6 @@
 package net.seliba.thirdpersonspectator.model;
 
+import com.github.johnnyjayjay.compatre.NmsDependent;
 import io.papermc.lib.PaperLib;
 import net.minecraft.server.v1_13_R2.EntityArmorStand;
 import net.seliba.thirdpersonspectator.ThirdPersonSpectator;
@@ -19,6 +20,7 @@ import java.util.Set;
  * Uses a virtual ArmorStand to force spectators into their third-person view.
  * Spectatable = can be spectated.
  */
+@NmsDependent
 public final class SpectatablePlayer {
 
     private final Player bukkitPlayer;

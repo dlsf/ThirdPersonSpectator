@@ -10,11 +10,13 @@ repositories {
     maven("https://oss.sonatype.org/content/groups/public/")
     maven("https://repo.rosewooddev.io/repository/public/")
     maven("https://papermc.io/repo/repository/maven-public/")
+    maven("https://jitpack.io")
 }
 
 dependencies {
     // Dependencies which should be shaded in
     implementation("io.papermc:paperlib:1.0.6")
+    implementation("com.github.johnnyjayjay:compatre:v0.2.2-alpha")
 
     // Dependencies which are already available or not required at runtime
     compileOnly("org.spigotmc:spigot:1.13.2")
@@ -41,5 +43,9 @@ tasks {
     shadowJar {
         archiveClassifier.set("")
         relocate("io.papermc.lib", "net.seliba.thirdpersonspectator.paperlib")
+        relocate("com.github.johnnyjayjay.compatre", "net.seliba.thirdpersonspectator.compatre")
+
+        // Fix for the ASM for some Spigot versions (for instance 1.13.2)
+        relocate("org.objectweb.asm", "net.seliba.thirdpersonspectator.asm")
     }
 }
