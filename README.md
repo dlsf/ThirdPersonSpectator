@@ -2,8 +2,7 @@
 Simple Spigot plugin which allows Players to spectate others in a third-person view.
 
 Players can start spectating by using the `/spectate [player]` command which doesn't require a permission.
-
-![Demo video](http://i.imgur.com/aX9dku1.gif)
+A demo for the plugin can be found [here](https://youtu.be/wfuuzExALRo).
 
 ## Compatibility Disclaimer
 This plugin is designed for Spigot 1.13.2, other versions like 1.16.5 are tested but may not work properly.
