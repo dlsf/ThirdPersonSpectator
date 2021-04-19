@@ -16,22 +16,22 @@ public enum Message implements IConfiguration {
     /**
      * Message which is sent to the console if it tries to execute a command.
      */
-    NO_PLAYER("no-player", "&cDazu musst du ein Spieler sein!"),
+    NO_PLAYER("no-player", "&cYou have to be a player to do that!"),
 
     /**
      * Messages which is sent when the requested Player for an operation is not online.
      */
-    PLAYER_NOT_ONLINE("player-not-online", "&cDieser Spieler ist nicht online!"),
+    PLAYER_NOT_ONLINE("player-not-online", "&cPlayer not found!"),
 
     /**
      * Message which is sent when a Player is requesting an operation on a Player which is (currently) unavailable.
      */
-    INVALID_TARGET("invalid-target", "&cDiesen Spieler kannst du nicht beobachten!"),
+    INVALID_TARGET("invalid-target", "&cYou can't spectate this player!"),
 
     /**
      * Message which is sent when a Player can't switch his GameMode because he is in the third-person spectator view.
      */
-    GAMEMODE_CHANGE_NOT_ALLOWED("gamemode-change-not-allowed", "&cDu darfst deinen Gamemode nicht wechseln!");
+    GAMEMODE_CHANGE_NOT_ALLOWED("gamemode-change-not-allowed", "&cYou're not allowed to change your gamemode!");
 
     private final String configKey;
     private final Object defaultValue;

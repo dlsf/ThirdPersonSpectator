@@ -11,7 +11,7 @@ public enum MainConfig implements IConfiguration {
     /**
      * The name of the {@link net.seliba.thirdpersonspectator.gui.SpectateGUI}.
      */
-    INVENTORY_NAME("spectate-gui.name", "&c&lSpieler"),
+    INVENTORY_NAME("spectate-gui.name", "&c&lPlayers"),
 
     /**
      * The size of the {@link net.seliba.thirdpersonspectator.gui.SpectateGUI}.
@@ -22,17 +22,17 @@ public enum MainConfig implements IConfiguration {
     /**
      * The lore of the Player heads in the {@link net.seliba.thirdpersonspectator.gui.SpectateGUI}.
      */
-    INVENTORY_LORE("spectate-gui.skull-lore", Collections.singletonList("&7Klicke, um diesen Spieler zu beobachten")),
+    INVENTORY_LORE("spectate-gui.skull-lore", Collections.singletonList("&7Click to spectate this player")),
 
     /**
      * Name of the item which skips the previous page in a {@link net.seliba.thirdpersonspectator.gui.GUI}.
      */
-    PREVIOUS_PAGE_BUTTON("gui.previous-button-name", "&bVorherige Seite"),
+    PREVIOUS_PAGE_BUTTON("gui.previous-button-name", "&bPrevious Page"),
 
     /**
      * Name of the item which skips the next page in a {@link net.seliba.thirdpersonspectator.gui.GUI}.
      */
-    NEXT_PAGE_BUTTON("gui.next-button-name", "&bNächste Seite");
+    NEXT_PAGE_BUTTON("gui.next-button-name", "&bNext Page");
 
     private final String configKey;
     private final Object defaultValue;
