@@ -38,7 +38,7 @@ public final class ThirdPersonSpectator extends JavaPlugin {
         // Start the scheduler who updates the ArmorStand positions for the spectator cameras
         new SpectatorScheduler().start(this);
 
-        getLogger().info("Erfolgreich gestartet!");
+        getLogger().info("Successfully started!");
     }
 
     /**
