@@ -51,9 +51,9 @@ public final class SpectateGUI implements GUI {
 
         // Find all Players that should be on this page and put representative ItemStacks in the Inventory
         SpectatablePlayerFactory.getCachedPlayers().stream()
+                .filter(SpectatablePlayer::isSpectatable)
                 .skip((currentPage - 1) * entriesPerPage)
                 .limit(entriesPerPage)
-                .filter(SpectatablePlayer::isSpectatable)
                 .map(SpectatablePlayer::getBukkitPlayer)
                 .map(this::getPlayerItem)
                 .forEach(inventory::addItem);
